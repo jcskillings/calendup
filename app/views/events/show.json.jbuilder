@@ -1,0 +1,1 @@
+json.extract! @event, :id, :creatorInvCode, :name, :description, :startDate, :startTime, :endDate, :endTime, :private, :everyone, :friends, :family, :work, :school, :personal, :created_at, :updated_at

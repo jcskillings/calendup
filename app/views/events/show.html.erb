@@ -1,0 +1,74 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Creatorinvcode:</strong>
+  <%= @event.creatorInvCode %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @event.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @event.description %>
+</p>
+
+<p>
+  <strong>Startdate:</strong>
+  <%= @event.startDate %>
+</p>
+
+<p>
+  <strong>Starttime:</strong>
+  <%= @event.startTime %>
+</p>
+
+<p>
+  <strong>Enddate:</strong>
+  <%= @event.endDate %>
+</p>
+
+<p>
+  <strong>Endtime:</strong>
+  <%= @event.endTime %>
+</p>
+
+<p>
+  <strong>Private:</strong>
+  <%= @event.private %>
+</p>
+
+<p>
+  <strong>Everyone:</strong>
+  <%= @event.everyone %>
+</p>
+
+<p>
+  <strong>Friends:</strong>
+  <%= @event.friends %>
+</p>
+
+<p>
+  <strong>Family:</strong>
+  <%= @event.family %>
+</p>
+
+<p>
+  <strong>Work:</strong>
+  <%= @event.work %>
+</p>
+
+<p>
+  <strong>School:</strong>
+  <%= @event.school %>
+</p>
+
+<p>
+  <strong>Personal:</strong>
+  <%= @event.personal %>
+</p>
+
+<%= link_to 'Edit', edit_event_path(@event) %> |
+<%= link_to 'Back', events_path %>

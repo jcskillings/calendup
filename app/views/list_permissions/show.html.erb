@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Listid:</strong>
+  <%= @list_permission.listId %>
+</p>
+
+<p>
+  <strong>Userid:</strong>
+  <%= @list_permission.UserId %>
+</p>
+
+<p>
+  <strong>Permissiontype:</strong>
+  <%= @list_permission.permissionType %>
+</p>
+
+<p>
+  <strong>Sharestatus:</strong>
+  <%= @list_permission.shareStatus %>
+</p>
+
+<%= link_to 'Edit', edit_list_permission_path(@list_permission) %> |
+<%= link_to 'Back', list_permissions_path %>

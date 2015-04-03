@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  listId: 1
+  UserId: 1
+  permissionType: MyString
+  shareStatus: MyString
+
+two:
+  listId: 1
+  UserId: 1
+  permissionType: MyString
+  shareStatus: MyString

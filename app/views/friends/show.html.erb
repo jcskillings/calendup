@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @friend.name %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @friend.title %>
+</p>
+
+<p>
+  <strong>Nickname:</strong>
+  <%= @friend.nickname %>
+</p>
+
+<p>
+  <strong>All:</strong>
+  <%= @friend.all %>
+</p>
+
+<p>
+  <strong>Family:</strong>
+  <%= @friend.family %>
+</p>
+
+<p>
+  <strong>Friend:</strong>
+  <%= @friend.friend %>
+</p>
+
+<p>
+  <strong>Work:</strong>
+  <%= @friend.work %>
+</p>
+
+<p>
+  <strong>School:</strong>
+  <%= @friend.school %>
+</p>
+
+<p>
+  <strong>Personal:</strong>
+  <%= @friend.personal %>
+</p>
+
+<%= link_to 'Edit', edit_friend_path(@friend) %> |
+<%= link_to 'Back', friends_path %>

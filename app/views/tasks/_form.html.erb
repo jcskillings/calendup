@@ -1,0 +1,65 @@
+<%= form_for(@task) do |f| %>
+  <% if @task.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@task.errors.count, "error") %> prohibited this task from being saved:</h2>
+
+      <ul>
+      <% @task.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :hidden %><br>
+    <%= f.check_box :hidden %>
+  </div>
+  <div class="field">
+    <%= f.label :completed %><br>
+    <%= f.check_box :completed %>
+  </div>
+  <div class="field">
+    <%= f.label :whoCompleted %><br>
+    <%= f.number_field :whoCompleted %>
+  </div>
+  <div class="field">
+    <%= f.label :dateCompleted %><br>
+    <%= f.datetime_select :dateCompleted %>
+  </div>
+  <div class="field">
+    <%= f.label :whoCreated %><br>
+    <%= f.number_field :whoCreated %>
+  </div>
+  <div class="field">
+    <%= f.label :createPermission %><br>
+    <%= f.text_field :createPermission %>
+  </div>
+  <div class="field">
+    <%= f.label :whoHid %><br>
+    <%= f.number_field :whoHid %>
+  </div>
+  <div class="field">
+    <%= f.label :dateHidden %><br>
+    <%= f.datetime_select :dateHidden %>
+  </div>
+  <div class="field">
+    <%= f.label :whoEdit %><br>
+    <%= f.number_field :whoEdit %>
+  </div>
+  <div class="field">
+    <%= f.label :lastEdit %><br>
+    <%= f.datetime_select :lastEdit %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

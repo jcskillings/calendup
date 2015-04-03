@@ -1,0 +1,33 @@
+<%= form_for(@list_permission) do |f| %>
+  <% if @list_permission.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@list_permission.errors.count, "error") %> prohibited this list_permission from being saved:</h2>
+
+      <ul>
+      <% @list_permission.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :listId %><br>
+    <%= f.number_field :listId %>
+  </div>
+  <div class="field">
+    <%= f.label :UserId %><br>
+    <%= f.number_field :UserId %>
+  </div>
+  <div class="field">
+    <%= f.label :permissionType %><br>
+    <%= f.text_field :permissionType %>
+  </div>
+  <div class="field">
+    <%= f.label :shareStatus %><br>
+    <%= f.text_field :shareStatus %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

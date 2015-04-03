@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @task.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @task.description %>
+</p>
+
+<p>
+  <strong>Hidden:</strong>
+  <%= @task.hidden %>
+</p>
+
+<p>
+  <strong>Completed:</strong>
+  <%= @task.completed %>
+</p>
+
+<p>
+  <strong>Whocompleted:</strong>
+  <%= @task.whoCompleted %>
+</p>
+
+<p>
+  <strong>Datecompleted:</strong>
+  <%= @task.dateCompleted %>
+</p>
+
+<p>
+  <strong>Whocreated:</strong>
+  <%= @task.whoCreated %>
+</p>
+
+<p>
+  <strong>Createpermission:</strong>
+  <%= @task.createPermission %>
+</p>
+
+<p>
+  <strong>Whohid:</strong>
+  <%= @task.whoHid %>
+</p>
+
+<p>
+  <strong>Datehidden:</strong>
+  <%= @task.dateHidden %>
+</p>
+
+<p>
+  <strong>Whoedit:</strong>
+  <%= @task.whoEdit %>
+</p>
+
+<p>
+  <strong>Lastedit:</strong>
+  <%= @task.lastEdit %>
+</p>
+
+<%= link_to 'Edit', edit_task_path(@task) %> |
+<%= link_to 'Back', tasks_path %>

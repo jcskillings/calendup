@@ -1,0 +1,73 @@
+<%= form_for(@event) do |f| %>
+  <% if @event.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@event.errors.count, "error") %> prohibited this event from being saved:</h2>
+
+      <ul>
+      <% @event.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :creatorInvCode %><br>
+    <%= f.text_field :creatorInvCode %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :startDate %><br>
+    <%= f.date_select :startDate %>
+  </div>
+  <div class="field">
+    <%= f.label :startTime %><br>
+    <%= f.time_select :startTime %>
+  </div>
+  <div class="field">
+    <%= f.label :endDate %><br>
+    <%= f.date_select :endDate %>
+  </div>
+  <div class="field">
+    <%= f.label :endTime %><br>
+    <%= f.time_select :endTime %>
+  </div>
+  <div class="field">
+    <%= f.label :private %><br>
+    <%= f.check_box :private %>
+  </div>
+  <div class="field">
+    <%= f.label :everyone %><br>
+    <%= f.check_box :everyone %>
+  </div>
+  <div class="field">
+    <%= f.label :friends %><br>
+    <%= f.check_box :friends %>
+  </div>
+  <div class="field">
+    <%= f.label :family %><br>
+    <%= f.check_box :family %>
+  </div>
+  <div class="field">
+    <%= f.label :work %><br>
+    <%= f.check_box :work %>
+  </div>
+  <div class="field">
+    <%= f.label :school %><br>
+    <%= f.check_box :school %>
+  </div>
+  <div class="field">
+    <%= f.label :personal %><br>
+    <%= f.check_box :personal %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

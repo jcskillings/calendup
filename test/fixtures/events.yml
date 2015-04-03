@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  creatorInvCode: MyString
+  name: MyString
+  description: MyText
+  startDate: 2015-03-22
+  startTime: 2015-03-22 16:50:01
+  endDate: 2015-03-22
+  endTime: 2015-03-22 16:50:01
+  private: false
+  everyone: false
+  friends: false
+  family: false
+  work: false
+  school: false
+  personal: false
+
+two:
+  creatorInvCode: MyString
+  name: MyString
+  description: MyText
+  startDate: 2015-03-22
+  startTime: 2015-03-22 16:50:01
+  endDate: 2015-03-22
+  endTime: 2015-03-22 16:50:01
+  private: false
+  everyone: false
+  friends: false
+  family: false
+  work: false
+  school: false
+  personal: false

@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  description: MyText
+  hidden: false
+  completed: false
+  whoCompleted: 1
+  dateCompleted: 2015-03-22 19:40:48
+  whoCreated: 1
+  createPermission: MyString
+  whoHid: 1
+  dateHidden: 2015-03-22 19:40:48
+  whoEdit: 1
+  lastEdit: 2015-03-22 19:40:48
+
+two:
+  title: MyString
+  description: MyText
+  hidden: false
+  completed: false
+  whoCompleted: 1
+  dateCompleted: 2015-03-22 19:40:48
+  whoCreated: 1
+  createPermission: MyString
+  whoHid: 1
+  dateHidden: 2015-03-22 19:40:48
+  whoEdit: 1
+  lastEdit: 2015-03-22 19:40:48
